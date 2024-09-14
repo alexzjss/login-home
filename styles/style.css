@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 /*
     Colors:
@@ -33,16 +34,17 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: #F2D6BD;
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: 650px;
     border-radius: 10px;
     box-shadow: 5px 5px 1px black;
+    
 
-    transition: width 0.1s, height 0.1s;
+    transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login div#image {
@@ -53,7 +55,90 @@ section#login div#image {
     background-size: cover;
 }
 
-section#login div#form {
+section#login div#forms {
     display: block;
     padding: 10px;
+}
+
+div#forms h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div#forms p {
+
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #F2BC79;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px black;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #D96B2B;
+}
+
+form div.input {
+    background-color: #1B52BF;
+    border: 2px solid #1B52BF;
+    width: 100%;
+    display: block;
+    height: 45px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.input label {
+    display: none;
+}
+
+div.input i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.input input {
+    background-color: #eedbc3;
+    font-size: 1em;
+    width: calc(100% - 50px);
+    height: 90%;
+    border: 0px;
+    border-radius: 7px;
+    transform: translateY(-10px);
+}
+
+div.input input:focus-within {
+    background-color: white;
+}
+
+form a.button {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #f0d6b6;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px 1px black;
+}
+
+form a.button:hover {
+    background-color: #D96B2B;
+}
+
+form a.button i {
+    font-size: 0.8em;
 }
